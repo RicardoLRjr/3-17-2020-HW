@@ -35,6 +35,19 @@ console.log(cityInput)
     }).then(function(UV) {
         console.log(UV[0].value)
     $("#UVindex").text(UV[0].value)
+   var UVindex = (UV[0].value)
+   if (UVindex <= 2){
+    $("#UVindex").attr("style", "background-color: green")}
+    else if (UVindex > 2 && UVindex <= 5 ){
+        $("#UVindex").attr("style", "background-color: yellow")
+}
+else if (UVindex > 5 && UVindex <= 7 ){
+    $("#UVindex").attr("style", "background-color: orange")
+}
+else if (UVindex > 7 && UVindex <= 10){
+$("#UVindex").attr("style", "background-color: red")}
+else if (UVindex > 10){
+    $("#UVindex").attr("style", "background-color: violet")}
     })
   })
  })
