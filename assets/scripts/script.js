@@ -1,8 +1,13 @@
 $(document).ready(function() {
  var apikey = "6b0554675e4a7b67fa6be5b8b95066ba";
- var city = "Mableton"
+
+$("#Search").click(function(event){
+event.preventDefault(); 
+
+ var cityInput = document.getElementById("city-input").value;
  var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
- "q=" + city +"&appid=" + apikey;
+ "q=" + cityInput +"&units=imperial&appid=" + apikey;
+console.log(cityInput)
 
  $.ajax({
     url: queryURL,
@@ -21,8 +26,16 @@ $(document).ready(function() {
     console.log(response);
     $("#city").text(response.name)
     $("#temp").text(response.main.temp)
-    $("humidity").text(response.main.humidity)
+    $("#humidity").text(response.main.humidity)
     $("#wind-speed").text(response.wind.speed)
-    $("#UVindex").text(response.main)
+    
+    $.ajax({
+        url: UVurl,
+        method: "GET" 
+    }).then(function(UV) {
+        console.log(UV[0].value)
+    $("#UVindex").text(UV[0].value)
+    })
   })
+ })
 })

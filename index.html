@@ -32,10 +32,12 @@
               <div class="row">
                   <div class="col-3">
                     <form>
-                        <div class="form-group">
-                          <label for="exampleFormControlInput1">Search your city here</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        <div class="form-inline">
+                          <label for="exampleFormControlInput1">Search your city:</label>
+                          <input type="text" class="form-control" id="city-input" placeholder="Winterfell"><br>
+                          <button class="btn btn-primary" id="Search"><i class="fas fa-search"></i></button>
                         </div>
+                        </form>
                   </div>
                   <div class="col-9">
                     <div class="card">
@@ -45,7 +47,6 @@
                           <p class="card-text" id = "humidity"></p>
                           <p class="card-text" id = "wind-speed"></p>
                           <p class="card-text" id = "UVindex"></p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                       </div>
                   </div>
