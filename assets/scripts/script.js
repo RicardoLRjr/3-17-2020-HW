@@ -33,6 +33,7 @@ function savedCityList() {
       )
     }
 function UVweather(){
+    console.log(response)
     var long = response.coord.lon
     var lat = response.coord.lat
     var UVurl = "http://api.openweathermap.org/data/2.5/uvi/forecast?appid=" + apikey + "&lat=" + lat + "&lon=" + long + "&cnt=1";
