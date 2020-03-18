@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Weather App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#">Weather Dashboard</a>
+            </nav>
+          </div>
+          <Div class="container">
+              <div class="row">
+                  <div class="col-4">
+                    <form>
+                        <div class="form-inline">
+                          <label for="exampleFormControlInput1">Search your city here:</label>
+                          <input type="text" class="form-control" id="city-input" placeholder="Rome" ><br>
+                          <button class="btn btn-primary" id="Search"><i class="fas fa-search"></i></button>
+                        </div>
+                        </form>
+                        <ul class="list-group" id="cityList">
+                        </ul>
+                  </div>
+                  <div class="col-8">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title" id="city"></h5>
+                          <p class="card-text" id = "temp"></p>
+                          <p class="card-text" id = "humidity"></p>
+                          <p class="card-text" id = "wind-speed"></p>
+                          <p class="card-text" id = "UVindex"></p>
+                        </div>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                  <div class="col">
+                    <label for=#day1>Five Day Forecast:</label>
+                  <div class="col">
+                    <div class="card-group">
+                  
+                  <div class="card">
+                    <div class="card-body five-day">
+                      <h5 class="card-title" id="1date"></h5>
+                    <p class="card-text" id = "1weather"></p>
+                      <p class="card-text" id = "1temp"></p>
+                      <p class="card-text" id = "1humidity"></p>
+                    </div>      
+                </div>
+                <div class="card">
+                  <div class="card-body five-day">
+                    <h5 class="card-title" id="2date"></h5>
+                    <p class="card-text" id = "2weather"></p>
+                    <p class="card-text" id = "2temp"></p>
+                    <p class="card-text" id = "2humidity"></p>
+                  </div>      
+              </div>
+              <div class="card">
+                <div class="card-body five-day">
+                  <h5 class="card-title" id="3date"></h5>
+                    <p class="card-text" id = "3weather"></p>
+                  <p class="card-text" id = "3temp"></p>
+                  <p class="card-text" id = "3humidity"></p>
+                </div>      
+            </div>
+            <div class="card">
+              <div class="card-body five-day">
+                <h5 class="card-title" id="4date"></h5>
+                    <p class="card-text" id = "4weather"></p>
+                <p class="card-text" id = "4temp"></p>
+                <p class="card-text" id = "4humidity"></p>
+              </div>      
+          </div>
+          <div class="card">
+            <div class="card-body five-day">
+              <h5 class="card-title" id="5date"></h5>
+                  <p class="card-text" id = "5weather"></p>
+              <p class="card-text" id = "5temp"></p>
+              <p class="card-text" id = "5humidity"></p>
+            </div>      
+       </div>
+      </div>
+      </div></div>
+              </div>
+          </Div>
+        
+        
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
+    </body>
+</html>
