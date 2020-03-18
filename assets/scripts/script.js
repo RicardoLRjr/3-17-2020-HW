@@ -1,6 +1,6 @@
 $(document).ready(function() {
  var apikey = "6b0554675e4a7b67fa6be5b8b95066ba";
-
+ document.getElementById("city-input").value = localStorage.getItem("cityInput")
 $("#Search").click(function(event){
 event.preventDefault(); 
 
@@ -90,5 +90,6 @@ var weatherUrl5 = "http://openweathermap.org/img/wn/" + weathericon5 + "@2x.png"
    $("#5humidity").text(fiveDay.list[4].main.humidity)
   })
  })
+ localStorage.setItem("cityInput", cityInput)
 })
 })
